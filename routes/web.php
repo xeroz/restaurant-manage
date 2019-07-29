@@ -16,3 +16,7 @@
 //});
 
 Route::get('/', 'TestController@hello');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
